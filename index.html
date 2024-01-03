@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/fb32ce2538.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav>
+        <h1 id="logo"><strong>NB</strong></h1>
+        <ul>
+           <li class="nav_links"><a href="#"> HOME </a> </li>
+           <li class="nav_links"><a href="#about"> ABOUT</a> </li>
+           <li class="nav_links"><a href="#projects"> PROJECTS</a> </li>
+           <li class="nav_links"><a href="#contact"> CONTACT</a> </li>
+        </ul> 
+        </header>
+      </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Naomi Buadee</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="home-pic" src="./assets/pic.jpg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Naomi 👋</h1>
+        <p class="section__text__p2">Aspiring Fullstack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='./#projects'">
+            My Work
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.HEIC"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">  
+              <h3>Certifications</h3><br>
+              <p> <a href="assets/Certificate.pdf" target="_blank" id="certificate">
+                CFG</a> - Python and Apps Kickstarter Course
+                  <br><br> <span id="p2">FCC</span> - Responsive Web Design</p>
+            </div>
+            <div class="details-container">
+              <h3>Skills</h3>
+              <ul>
+                <li><i class="fa-brands fa-html5 fa-beat" style="color: #ff6a00;"></i></li>
+                <li><i class="fa-brands fa-css3-alt fa-beat" style="color: #3a88fe;"></i></li>
+                <li><i class="fa-brands fa-js fa-beat" style="color: #f5ec00;"></i></li>
+                <li><i class="fa-brands fa-python fa-beat"></i></li>
+                <li><i class="fa-brands fa-github fa-beat" style="color: #000000;"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I'm Naomi and I'm from Manchester! I work as a civil servant by day,
+              and teach myself how to code by night. Using a range of resources such as 
+              CodeFirstGirls, FreeCodeCamp and Udemy Tutorials,
+               I am learning the fundamental principles 
+              of computer science, different coding languages and JavaScript frameworks. <br><br>
+              I'm currently participating in the <span id="p2">#100daysofcode</span> challenge to keep my skills sharp.
+              What excites me most about a career as a software developer is the constant opportunity
+               to learn, problem-solve, and the ability to make a lasting impact!
+
+            </p>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-3.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator</h2>
+            <p> Created functional calculator using HTML, CSS, JavaScript</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NaomiBu/Calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://steady-pika-3a4459.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Landing Page</h2>
+            <p> Made a landing page for my Church utilising HTML, CSS, JavaScript</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NaomiBu/LandingPage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rainbow-cascaron-ed5935.netlify.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-1.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <p> My portfolio displaying my recent projects. Made using HTML, CSS, JavaScript</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <a href="naomibuadee1@gmail.com">
+              <i class="fa-solid fa-envelope icon"></i>
+            </a>
+            <p><a href="mailto:naomibuadee1@gmail.com"></a></p>
+          </div>
+        <div class="contact-info-container">
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin icon"></i>
+            </a>
+            <p><a href="https://www.linkedin.com"></a></p>
+          </div>
+          <div class="contact-info-container">
+            <a href="https://github.com/NaomiBu"> 
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+            <p><a href="https://github.com/NaomiBu"></a></p> 
+          </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; Naomi Buadee. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
